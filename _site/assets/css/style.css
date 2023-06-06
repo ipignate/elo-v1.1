@@ -3222,11 +3222,12 @@ input[type=color] {
 }
 
 .products__area {
+  margin-top: -150px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  z-index: 1;
+  z-index: 999999;
 }
 .products__item {
   padding: 50px 45px;
