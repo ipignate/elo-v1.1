@@ -1,0 +1,20 @@
+{
+  "name": "elo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "watch": "npx @11ty/eleventy --watch",
+    "build": "npx eleventy"
+  },
+  "keywords": [
+    "ELO",
+    "Automotive",
+    "Leaf",
+    "Springs",
+    "Automotive"
+  ],
+  "author": "Inês Pignatelli",
+  "license": "ISC"
+}
