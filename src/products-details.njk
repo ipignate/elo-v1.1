@@ -1,0 +1,16 @@
+---
+layout: base.njk
+permalink: "{{ page.filePathStem }}.html"
+---
+
+{% block content %}
+
+  {% include 'partials/header.njk' %}
+        
+  {% include 'partials/sidebar.njk' %}
+
+  {% include 'partials/product-details-content.njk' %}
+
+  {% include 'partials/footer.njk' %}
+
+{% endblock %}

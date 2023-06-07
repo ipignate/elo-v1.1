@@ -309,7 +309,7 @@
 	// 00. Testimonial slider activation Js
 	if (jQuery(".testimonial__slider").length > 0) {
 		let testimonial__slider = new Swiper('.testimonial__slider', {
-			slidesPerView: 4,
+			slidesPerView: 2,
 			spaceBetween: 50,
 			// direction: 'vertical',
 			loop: true,
@@ -343,10 +343,10 @@
 					slidesPerView: 2,
 				},
 				1200: {
-					slidesPerView: 3,
+					slidesPerView: 2,
 				},
 				1400: {
-					slidesPerView: 4,
+					slidesPerView: 2,
 					}
 				}
 		});
@@ -630,7 +630,7 @@
 	////////////////////////////////////////////////////
 	// 00. testimonial__slider-2 activation Js
 	if (jQuery(".testimonial__slider-2").length > 0) {
-		let services__slide = new Swiper('.testimonial__slider-2', {
+		let testimonial__slide = new Swiper('.testimonial__slider-2', {
 			slidesPerView: 1,
 			spaceBetween: 0,
 			slidesPerView: 1,
