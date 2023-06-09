@@ -8199,14 +8199,7 @@ ul li {
 
 /* warp our-history */
 
-.wrap-img {
-  -webkit-animation: bubble 5s linear infinite;
-	animation: bubble 5s linear infinite;
-  background-image: linear-gradient(to top, #dd4454 0%, #dd9044 100%);
-  margin-left: 20px;
-  margin-right: 20px;
-  overflow: hidden;
-}
+
 
 @-webkit-keyframes bubble {
 	0%,
