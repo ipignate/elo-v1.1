@@ -2055,6 +2055,11 @@ input[type=color] {
   visibility: visible;
   opacity: 1;
 }
+
+.header-phone {
+  font-size: 12px;
+}
+
 .main-menu-2 ul li a {
   color: var(--tp-common-white);
   padding: 20px 0;
@@ -2311,14 +2316,18 @@ input[type=color] {
     margin-right: 15px;
   }
 }
+.header__lang {
+  display: inline-block;
+  padding-top: 40px;
+  margin-right: 40px;
+  position: relative;
+}
 .header__lang .nice-select {
   height: auto;
   background: transparent;
   border: 0;
-  line-height: 25px;
   color: var(--tp-common-black);
   font-weight: var(--tp-fw-sbold);
-  margin-right: 30px;
 }
 .header__lang .nice-select::after {
   width: 7px;
@@ -2719,7 +2728,7 @@ input[type=color] {
 }
 @media (max-width: 575px) {
   .slider-contant {
-    margin-top: 105px;
+    margin-top: 30px;
   }
 }
 .slider-contant span {
@@ -8239,3 +8248,15 @@ ul li {
 	}
 }
 
+/* custom css*/
+
+#lang {
+  color: var(--tp-theme-1);
+  font-size: 16px;
+  line-height: 20px;
+  border:0;
+  background-color: transparent;
+  padding: 40px 0;
+  display: inline-block;
+  transition: 0.3s;
+}
