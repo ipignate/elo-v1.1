@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
     "watch": "npx @11ty/eleventy --watch",
-    "build": "npx eleventy"
+    "serve": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=* npx @11ty/eleventy"
   },
   "keywords": [
     "ELO",
@@ -16,5 +17,8 @@
     "Automotive"
   ],
   "author": "Inês Pignatelli",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
 }
