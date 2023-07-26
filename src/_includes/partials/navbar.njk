@@ -1,31 +1,48 @@
-<nav id="mobile-menu">
-   <ul>
-      <li class="has-dropdown"><a href="index.html">Empresa</a>
-         <ul class="sub-menu">
-            <li><a href="index.html#about">Sobre</a></li>
-            <li><a href="#our-history">História</a></li>
-            <li><a href="contact.html">Carreiras</a></li>
-            <li><a href="terms.html">Termos & Condições</a></li>
-         </ul>
-      </li>
-      
-      <li><a href="products-details.html">Produtos</a>
-      </li>
-      
-      <li class="has-dropdown"><a href="#">Qualidade</a>
-         <ul class="sub-menu">
-            <li><a href="quality.html">Certificações</a></li>
-            <li><a href="quality-policy.html">Política da Qualidade</a></li>
-         </ul>
-      </li>
-      
-      <li><a href="contact.html">Contact</a></li>
+<div id="nav-col1" class="collapse navbar-collapse">
+ <ul class="navbar-nav mx-auto">
+    <div class="dropdown"> 
+       <a class="btn dropdown-toggle" href="" data-bs-toggle="dropdown">
+          {{navigation.navCo.navCo}}
+       </a>
+       <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="">{{navigation.navCo.navAbt}}</a></li>
+          <li><a class="dropdown-item" href="">{{navigation.navCo.navHst}}</a></li>
+          <li><a class="dropdown-item" href="">{{navigation.navCo.navCar}}</a></li>
+          <li><a class="dropdown-item" href="">{{navigation.navCo.navTC}}</a></li>
+       </ul>
+    </div>
 
-      <select id="lang">
-         <option value="PT">PT</option>
-         <option value="EN">EN</option>
-         <option value="DE">DE</option>
-      </select>         
-      
-   </ul>
-</nav>
+     <li class="nav-item">
+        <a class="nav-link" href="products-details.html">{{navigation.navProd}}</a>
+     </li>
+
+     <div class="dropdown"> 
+       <a class="btn dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        {{navigation.navQual.navQual}}
+       </a>
+       <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="">{{navigation.navQual.navCert}}</a></li>
+          <li><a class="dropdown-item" href="">{{navigation.navQual.navQPol}}</a></li>
+       </ul>
+    </div>
+
+     <li class="nav-item">
+        <a class="nav-link" href="contacts.html">{{navigation.navCt}}</a>
+     </li>
+
+ </ul>
+
+ <ul class="navbar-nav">
+     <li class="nav-item">
+        <a class="nav-link active nav-phone" href="tel:{{meta.phone}}"> {{ meta.phone }} </a>
+     </li>
+     <li class="nav-item">
+        <a class="nav-link nav-email" href="mailto:{{meta.email}}"> {{ meta.email }} </a>
+     </li>
+     <select id="lang">
+       <option value="PT">PT</option>
+       <option value="EN">EN</option>
+       <option value="DE">DE</option>
+    </select>
+ </ul>
+</div>

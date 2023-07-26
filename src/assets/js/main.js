@@ -20,7 +20,7 @@
 	// 02. Mobile Menu Js
 	$('#mobile-menu').meanmenu({
 		meanMenuContainer: '.mobile-menu',
-		meanScreenWidth: "991",
+		meanScreenWidth: "992",
 		meanExpand: ['<i class="fal fa-plus"></i>'],
 	});
 
@@ -69,6 +69,13 @@
 			$("#header-sticky").addClass("header__sticky");
 		}
 	});
+
+	/////////////////////////////////////////////////////
+	// Custom JS Code
+	////////////////////////////////////////////////////
+	$(window).scroll(function(){
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+ });
 
 	////////////////////////////////////////////////////
 	// 07. Data CSS Js

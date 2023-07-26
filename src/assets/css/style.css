@@ -3085,7 +3085,7 @@ input[type=color] {
 .sm-products__item .flip-card-front {
   background-color: transparent;
   width: 100%;
-  height: 300px;
+  height: 400px;
   border-radius: 6px;
 }
 .sm-products__item .flip-card-front .flip-card-icon i {
@@ -3104,7 +3104,7 @@ input[type=color] {
 .sm-products__item .flip-card-back {
   background-color: transparent;
   width: 100%;
-  height: 300px;
+  height: 400px;
   border-radius: 6px;
 }
 .sm-products__item .flip-card-back .flip-card-icon i {
@@ -3156,7 +3156,7 @@ input[type=color] {
 }
 .sm-products__item .flip-card-front-2 {
   padding: 35px 40px;
-  height: 260px;
+  height: 360px;
 }
 .sm-products__item .flip-card-back {
   background-color: var(--tp-theme-1);
@@ -3168,7 +3168,7 @@ input[type=color] {
 }
 .sm-products__item .flip-card-back-2 {
   padding: 35px 40px;
-  height: 260px;
+  height: 360px;
 }
 .sm-products__item .flip-card-back span {
   display: inline-block;
@@ -4248,8 +4248,8 @@ input[type=color] {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .sd-content {
-    bottom: 50px;
-    width: 90%;
+    bottom: 10px;
+    width: 50%;
     z-index: 2;
     left: 0;
     right: 0;
@@ -4258,8 +4258,8 @@ input[type=color] {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .sd-content {
-    bottom: 40px;
-    width: 90%;
+    bottom: 10px;
+    width: 50%;
     z-index: 2;
     left: 0;
     right: 0;
@@ -4268,8 +4268,8 @@ input[type=color] {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .sd-content {
-    bottom: 30px;
-    width: 90%;
+    bottom: 10px;
+    width: 50%;
     z-index: 2;
     left: 0;
     right: 0;
@@ -4278,8 +4278,8 @@ input[type=color] {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .sd-content {
-    bottom: 20px;
-    width: 90%;
+    bottom: 10px;
+    width: 50%;
     z-index: 2;
     left: 0;
     right: 0;
@@ -4288,7 +4288,7 @@ input[type=color] {
 }
 .sd-content .sd-meta {
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1;
   color: var(--tp-common-white);
 }
 .sd-content h5 {
@@ -4296,9 +4296,7 @@ input[type=color] {
   line-height: 1.3;
   color: var(--tp-common-white);
 }
-.sd-content .project-info {
-  margin-top: 100px;
-}
+
 .sd-content .project-info i {
   font-size: 15px;
   color: var(--tp-heading-primary);
@@ -4323,12 +4321,12 @@ input[type=color] {
 }
 .sd-content .sd-bg-icon {
   position: absolute;
-  bottom: 10%;
+  bottom: 0;
   left: 35%;
   z-index: -1;
 }
 .sd-content .sd-bg-icon i {
-  font-size: 230px;
+  font-size: 120px;
   color: #e4e4e421;
 }
 @media (max-width: 575px) {
@@ -4429,8 +4427,8 @@ input[type=color] {
 
 .vide-button {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
+  transform: translateY(-40%);
   right: -65px;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -4442,8 +4440,8 @@ input[type=color] {
   }
 }
 .vide-button a {
-  width: 120px;
-  height: 120px;
+  width: 320px;
+  height: 320px;
   background: var(--tp-common-white);
   border-radius: 50%;
   color: var(--tp-theme-1);
@@ -4457,8 +4455,8 @@ input[type=color] {
 .vide-button a::before {
   position: absolute;
   content: "";
-  width: 120px;
-  height: 120px;
+  width: 320px;
+  height: 320px;
   background: #ffffff;
   border-radius: 50%;
   z-index: -1;
@@ -8252,11 +8250,80 @@ ul li {
 
 #lang {
   color: var(--tp-theme-1);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   border:0;
   background-color: transparent;
   padding: 40px 0;
   display: inline-block;
   transition: 0.3s;
+}
+
+/* Normal styles for header */
+/* Add any additional styling you want for the header in this section */
+
+/* Responsive styles for screens between 990px and 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* Adjust the layout and styles to fit the header within this range */
+  /* For example, you can make the logo and menu items resize to fit the smaller screen */
+  
+  .col-xl-2, .col-lg-2 {
+     flex: 0 0 20%;
+     max-width: 20%;
+  }
+
+  .col-xl-7, .col-lg-6 {
+     flex: 0 0 60%;
+     max-width: 60%;
+  }
+
+  /* You may need to adjust the font size, padding, or margins for better presentation on smaller screens */
+}
+
+.navbar-light.scrolled {
+  background-color: var(--tp-grey-5);
+}
+
+.dropdown-menu {
+  border: none;
+  background-color: var(--tp-common-white);
+}
+
+a.btn.dropdown-toggle {
+  border: none;
+  align-items: center;
+  padding-top: 0.569rem;
+  color: var(--tp-common-black-2);
+}
+
+a.nav-link {
+  color: var(--tp-common-black);
+}
+
+a.nav-link.active.nav-phone {
+  padding-top: 2.4rem;
+  font-size: 14px;
+  color: var(--tp-theme-1);
+  white-space: nowrap;
+}
+
+a.nav-link.nav-email {
+  padding-top: 2.4rem;
+  font-size: 14px;
+  margin-right: 2rem;
+  color: var(--tp-theme-1);
+  white-space: nowrap;
+}
+
+@media (min-width: 767.98px) and (max-width: 992px) {
+  a.nav-link.nav-email {
+    display: none;
+  }
+  a.nav-link.active.nav-phone {
+    display: none;
+  }
+}
+
+.navbar-brand {
+  padding-left: 25px;
 }

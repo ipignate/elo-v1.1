@@ -13,7 +13,9 @@
           </a>
        </div>
        
-       <div class="mobile-menu fix"></div>
+       <div class="mobile-menu fix">
+         {% include 'partials/mobile-menu.njk' %}
+       </div>
        <div class="sidebar__contact mt-30 mb-20">
           <h4>Contactos</h4>
           <ul>
@@ -24,7 +26,7 @@
                 <div class="sidebar__contact-text">
                   <iframe src="https://www.google.com/maps/embed?pb=!4v1685890475937!6m8!1m7!1shWUtbljaydUMW-0WXtvLYw!2m2!1d38.60690747570651!2d-9.083651218877984!3f205.42!4f-6.680000000000007!5f0.7820865974627469" width="180" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br/>
                   <a>
-                     Rua Quinta da Galega de Cima, 14 - Casal do Marco - Portugal
+                     {{meta.address}}
                   </a>
                 </div>
              </li>

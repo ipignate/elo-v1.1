@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "engines": {
-		"node": ">=16"
-	},
+    "node": ">=16"
+  },
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
@@ -14,9 +14,9 @@
     "debug": "DEBUG=* npx @11ty/eleventy"
   },
   "repository": {
-		"type": "git",
-		"url": "https://github.com/ipignate/elo-v1.1.git"
-	},
+    "type": "git",
+    "url": "https://github.com/ipignate/elo-v1.1.git"
+  },
   "keywords": [
     "ELO",
     "Automotive",
@@ -27,7 +27,8 @@
   "author": "Inês Pignatelli",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "eleventy-plugin-youtube-embed": "^1.9.0"
   },
   "devDependencies": {
     "@netlify/plugin-lighthouse": "^5.0.0"
