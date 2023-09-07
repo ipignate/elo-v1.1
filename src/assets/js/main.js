@@ -93,7 +93,9 @@
 
 	////////////////////////////////////////////////////
 	// 07. Nice Select Js
-	$('select').niceSelect();
+	$(document).ready(function() {
+		$('select').niceSelect();
+	})
 
 	///////////////////////////////////////////////////
 	// 13. main Slider Js
@@ -909,6 +911,8 @@
 			append.classList.add('hide')
 		})
 	}
+
+	
 
 
 })(jQuery);

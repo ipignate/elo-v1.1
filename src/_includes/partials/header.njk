@@ -1,74 +1,34 @@
-<nav class="navbar navbar-light navbar-expand-md sticky-top">
-   <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-         <img src="assets/img/logo/logo.png" width="80px" alt="">
-       </a>
-       
-      <div class="side-menu-icon d-lg-none text-end">
-         <a href="javascript:void(0)" class="info-toggle-btn f-right sidebar-toggle-btn"><i class="fal fa-bars"></i></a>
-      </div>
-
-      {% include 'partials/navbar.njk' %}
-      
-   </div>
-</nav>
-
-<!-- sidebar area start -->
-<div class="sidebar__area">
-   <div class="sidebar__wrapper">
-      <div class="sidebar__close">
-         <button class="sidebar__close-btn" id="sidebar__close-btn">
-            <i class="fal fa-times"></i>
-         </button>
-      </div>
-      <div class="sidebar__content">
-         <div class="sidebar__logo mb-40">
-            <a href="index.html">
-               <img src="assets/img/logo/logo-black.png" alt="logo">
-            </a>
+      <!-- header-area-start -->
+      <div class="row align-items-left text-left bg-dark section__wrapper">
+         <div class="col">
+           <div class="topbarElements d-inline-flex align-items-center">
+             <!-- <div>&#x27A4;</div> -->
+             <div class="text-start d-md-block d-none">
+               <h5 class="p-0 m-0 text-uppercase" style="font-size: x-small;">Morada</h5>
+               <p class="p-0 m-0 text-secondary" style="font-size: x-small;"><a href="https://www.google.com/maps/@38.6069075,-9.0836512,3a,75y,217.03h,90t/data=!3m7!1e1!3m5!1shWUtbljaydUMW-0WXtvLYw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DhWUtbljaydUMW-0WXtvLYw%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D217.02771%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu">22 R. Qt.ª da Galega de Cima, Portugal</a></p>
+             </div>
+           </div>
          </div>
-         
-         <div class="mobile-menu fix">
+         <div class="col">
+           <div class="topbarElements d-inline-flex align-items-center">
+             <!-- <div>&#x270E;</div> -->
+             <div class="text-start d-md-block d-none">
+               <h5 class="p-0 m-0 text-uppercase" style="font-size: x-small;">Email</h5>
+               <p class="p-0 m-0 text-secondary" style="font-size: x-small;"><a href="mailto:info@elo-automotive.com">info@elo-automotive.com</a></p>
+             </div>
+           </div>
          </div>
-         <div class="sidebar__contact mt-30 mb-20">
-               <h4>Contact Info</h4>
-               <ul>
-                  <li class="d-flex align-items-center">
-                     <div class="sidebar__contact-icon mr-15">
-                        <i class="fal fa-map-marker-alt"></i>
-                     </div>
-                     <div class="sidebar__contact-text">
-                        <a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">12/A, Mirnada City Tower, NYC</a>
-                     </div>
-                  </li>
-                  <li class="d-flex align-items-center">
-                  <div class="sidebar__contact-icon mr-15">
-                     <i class="far fa-phone"></i>
-                  </div>
-                  <div class="sidebar__contact-text">
-                     <a href="tel:+012-345-6789">088889797697</a>
-                  </div>
-               </li>
-               <li class="d-flex align-items-center">
-                  <div class="sidebar__contact-icon mr-15">
-                     <i class="fal fa-envelope"></i>
-               </div>
-               <div class="sidebar__contact-text">
-                  <a href="mailto:info@gmail.com">info@gmail.com</a>
-               </div>
-            </li>
-               </ul>
+         <div class="col">
+           <div class="topbarElements d-inline-flex align-items-center">
+             <!-- <div>
+               &#x260F;
+             </div> -->
+             <div class="text-start d-md-block d-none">
+               <h5 class="p-0 m-0 text-uppercase" style="font-size: x-small;">Telefone</h5>
+               <p class="p-0 m-0 text-secondary" style="font-size: x-small;"><a href="tel:351212244599">+351 212 244 599 </a><span style="font-size: xx-small;">(*) CHAMADA PARA A REDE MÓVEL NACIONAL</span></p>
+             </div>
+           </div>
          </div>
-      <div class="sidebar__social">
-         <ul>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-         </ul>
-      </div>
-      </div>
-   </div>
-</div>
-      
-<!-- sidebar area end -->     
-<div class="body-overlay"></div>
-<!-- sidebar area end --> 
+       </div>
+       {% include 'partials/navbar.njk' %}
+      <!-- header-area-end -->

@@ -187,7 +187,6 @@ span,
 p,
 i,
 input,
-select,
 textarea,
 li,
 img,
@@ -1564,38 +1563,21 @@ input[type=color] {
 }
 
 /*----------------------------------------*/
-/*  05. Section Tilte CSS START
+/*  05. Section Title CSS START
 /*----------------------------------------*/
 .section__wrapper {
   position: relative;
 }
 .section__wrapper::before {
   position: absolute;
-  content: "";
   width: 100%;
-  height: 1px;
   background: var(--tp-border-1);
   top: 0;
 }
-.section__wrapper .section__title {
-  font-size: 40px;
-  line-height: 1;
-  padding-top: 50px;
-  margin-left: 30px;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .section__wrapper .section__title {
-    font-size: 35px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
-  .section__wrapper .section__title {
-    font-size: 28px;
-  }
-}
-@media (max-width: 575px) {
-  .section__wrapper .section__title {
-    font-size: 26px;
+
+@media only screen and (max-width: 767px) {
+  .section__wrapper {
+    display: none;
   }
 }
 .section__wrapper-2 .section__title {
@@ -8248,82 +8230,25 @@ ul li {
 
 /* custom css*/
 
-#lang {
-  color: var(--tp-theme-1);
-  font-size: 14px;
-  line-height: 20px;
-  border:0;
+// Navbar
+
+.nav-item {
+  font-size:18px;
+  text-transform:uppercase;
+  height:82px;
+  line-height:64px;
+}
+.flare {
   background-color: transparent;
-  padding: 40px 0;
-  display: inline-block;
-  transition: 0.3s;
 }
-
-/* Normal styles for header */
-/* Add any additional styling you want for the header in this section */
-
-/* Responsive styles for screens between 990px and 1200px */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* Adjust the layout and styles to fit the header within this range */
-  /* For example, you can make the logo and menu items resize to fit the smaller screen */
-  
-  .col-xl-2, .col-lg-2 {
-     flex: 0 0 20%;
-     max-width: 20%;
-  }
-
-  .col-xl-7, .col-lg-6 {
-     flex: 0 0 60%;
-     max-width: 60%;
-  }
-
-  /* You may need to adjust the font size, padding, or margins for better presentation on smaller screens */
+.flare a.nav-link {
+  color:#fff !important
 }
-
-.navbar-light.scrolled {
-  background-color: var(--tp-grey-5);
-}
-
-.dropdown-menu {
-  border: none;
-  background-color: var(--tp-common-white);
-}
-
-a.btn.dropdown-toggle {
-  border: none;
-  align-items: center;
-  padding-top: 0.569rem;
-  color: var(--tp-common-black-2);
-}
-
-a.nav-link {
-  color: var(--tp-common-black);
-}
-
-a.nav-link.active.nav-phone {
-  padding-top: 2.4rem;
-  font-size: 14px;
+.topbarElements > div:nth-of-type(1){
+  margin:5px 32px;
   color: var(--tp-theme-1);
-  white-space: nowrap;
+}
+.topbarElements a {
+  color: var(--tp-common-white);
 }
 
-a.nav-link.nav-email {
-  padding-top: 2.4rem;
-  font-size: 14px;
-  margin-right: 2rem;
-  color: var(--tp-theme-1);
-  white-space: nowrap;
-}
-
-@media (min-width: 767.98px) and (max-width: 992px) {
-  a.nav-link.nav-email {
-    display: none;
-  }
-  a.nav-link.active.nav-phone {
-    display: none;
-  }
-}
-
-.navbar-brand {
-  padding-left: 25px;
-}

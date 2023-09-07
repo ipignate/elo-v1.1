@@ -13,4 +13,8 @@ module.exports = {
   navQPol: "Política da Qualidade",
  },
  navCt: "Contactos",
+ navLang: {
+  lang1: "PT",
+  lang2: "EN",
+ }
 }
